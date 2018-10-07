@@ -11,14 +11,15 @@ int main()
 int palindrome(int n)
 {
      int r,re=0;
-    while(n !=0)
+     int f=n;
+    while(f!=0)
     {
 
-        r=n%10;
+        r=f%10;
         re=r+re*10;
-        n=n/10;
+        f=f/10;
     }
-    if(n==re)
+    if(re==n)
     {
         printf("Palindrome");
     }

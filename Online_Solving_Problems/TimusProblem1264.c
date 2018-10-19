@@ -3,9 +3,10 @@
 int main()
 {
 
-    int a,b;
+    int a,b,c;
     scanf("%d\n%d",&a,&b);
-    printf("%d",a*(b+1));
+    c=a+b
+    printf("%d",c);
     return 0;
 
 

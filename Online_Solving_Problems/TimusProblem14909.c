@@ -1,18 +1,10 @@
+#include <stdio.h>
 
-#include<stdio.h>
-int main()
-{
+int main(){
+    int x,y;
+    scanf("%d %d",&x,&y);
+    printf("%d %d\n",y-1,x-1);
 
-    int i,j;
-    int s=10;
-    int r;
-    scanf("%d\%d",&i,&j);
-    if(i<=10)
-        r=s-i;
-        printf("%d\n",r);
-    if(j<=10)
-        r=s-j;
-        printf("%d",r);
-        return 0;
-
+    return 0;
 }
+

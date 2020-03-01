@@ -1,21 +1,29 @@
+/*
+list of palindrome.
+*/
+
 #include<stdio.h>
 int main()
 {
-    int n,reverse = 0, list, remainder;
-    scanf("%d",&n);
-    int i;
-    for( i = 1; i <= n ;i++)
+
+    int i=1,start,end,remainder,reverse ,temp;
+    scanf("%d",&end);
+    for( i= 1;i <= end; i++)
     {
-        while(i != 0)
-    {
-        remainder = n % 10;
-        reverse = reverse * 10 + remainder;
-        i = i / 10;
-    }
+        temp = i;
+        reverse = 0;
+        while(temp)
+        {
+            remainder = temp%10;
+            reverse = reverse * 10 + remainder;
+            temp = temp/10;
+        }
+         if( i ==reverse )
+       {
+            printf("%d\n", reverse);
+       }
+
 
     }
-      printf("Palindrome = %d\n ",reverse);
-
     return 0;
 }
-
